@@ -1,0 +1,83 @@
+* {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+a {
+    color: white !important;
+    font-size: 17pt;
+    margin: 0 auto;
+}
+#container {
+    height: auto;
+}
+.homerow {
+    height: 450px;
+    width: 100%;
+    margin-top: 125px;
+}
+.homerow * {
+    display: inline-block;
+}
+.homerow:first-of-type, .homerow:nth-of-type(2), .homerow:nth-of-type(3), .homerow:nth-of-type(4) {
+    border: none !important;
+}
+#guitardeals, #repairs {
+    width: 400px;
+    height: 100%;
+    vertical-align: top;
+    margin-left: 140px;
+    text-align: center;
+}
+#guitardeals h2, #rentals h2, #repairs h2, #lessons h2 {
+    margin-top: 115px;
+    font-weight: bold;
+}
+#guitardeals p, #rentals p, #repairs p, #lessons p {
+    margin-top: 15px;
+    font-size: 14pt !important;
+}
+#guitardeals * {
+    font-family: "Trebuchet MS", Helvetica, sans-serif
+}
+#home1img, #home3img {
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 2px 1px 2px;
+    margin-left: 100px;
+    border-radius: 15px;
+}
+#home2img, #home4img {
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 2px 1px 2px;
+    border-radius: 15px;
+    vertical-align: top;
+    margin-left: 200px;
+}
+.homerow:nth-of-type(2) div, #lessons {
+    height: 100%;
+    width: 400px;
+    text-align: center;
+    vertical-align: top;
+    margin-left: 245px;
+}
+#guitardeals button, #rentals button, #repairs button, #lessons button {
+    margin-top: 15px !important;
+}
+#home3img {
+    width: 675px;
+    height: 450px;
+}
+#home4img {
+    width: 675px;
+    height: 450px;
+}
+#footer {
+    background-color: #343A40;
+    height: 60px;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
+#footer *{
+    margin-top: 10px;
+}

@@ -1,0 +1,11 @@
+* {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+a {
+    color: white !important;
+    font-size: 17pt;
+    margin: 0 auto;
+}
+#container {
+    height: auto;
+}

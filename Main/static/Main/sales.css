@@ -1,0 +1,38 @@
+* {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+a {
+    color: white !important;
+    font-size: 17pt;
+    margin: 0 auto;
+}
+#container {
+    height: auto;
+}
+body {
+    background-color: #f6f1f4;
+}
+h2 {
+    text-align: center;
+    margin-top: 25px;
+}
+strong {
+    margin-top: 15px !important;
+}
+img {
+    padding-bottom: 15px;
+}
+#footer {
+    background-color: #343A40;
+    height: 60px;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
+#footer *{
+    margin-top: 10px;
+}
+#guitars img {
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px;
+}

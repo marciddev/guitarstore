@@ -1,6 +1,9 @@
 * {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
+body {
+    background-color: #f6f1f4;
+}
 a {
     color: white !important;
     font-size: 17pt;

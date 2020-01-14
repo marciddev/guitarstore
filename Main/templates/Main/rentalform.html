@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {%load static%}
+    <link rel="stylesheet" href="{% static 'Main/rentalform.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Add a rental</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark" style="height: 65px;">
+        <a href="/">HOME</a>
+        <a href="/sales">SALES</a>
+        <a href="/rentals">RENTALS</a>
+        <a href="/repairs">REPAIRS</a>
+        <a href="/lessons">LESSONS</a>
+    </nav>
+    <h1>Add A Rental</h1>
+    <div id="form">
+        <form action="/rental/redirect" method="post">
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li style="color: red;"{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            {%csrf_token %}
+            <div class="form-group">
+                <label>Price</label>
+                <input type="number" name="price" class="form-control" value=0>
+            </div>
+            <div class="form-group">
+                <label>Image Link</label>
+                <input type="text" name="image" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>For how long?</label>
+                <input type="text" name="duration" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>What brand?</label>
+                <input type="text" name="brand" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>What model?</label>
+                <input type="text" name="model" class="form-control">
+            </div>
+            <input type="submit" class="btn btn-primary">
+        </form>
+    </div>
+</body>
+
+</html>

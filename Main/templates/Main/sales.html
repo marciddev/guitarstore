@@ -12,17 +12,19 @@
 </head>
 <body>
     <nav class="navbar navbar-dark bg-dark" style="height: 65px;">
-        <a href="/">Home</a>
-        <a href="/sales">On Sale</a>
-        <a href="/rentals">Rentals</a>
-        <a href="/repairs">Repairs</a>
-        <a href="/lessons">Lessons</a>
+        <a href="/">HOME</a>
+        <a href="/sales">SALES</a>
+        <a href="/rentals">RENTALS</a>
+        <a href="/repairs">REPAIRS</a>
+        <a href="/lessons">LESSONS</a>
     </nav>
-    <h2>Current Sales: </h2>
     <div class="container" style="overflow-y: auto;">
-        <div class="row">
+        <nav id="head"class="Navbar navbar-dark bg-dark" style="height: 45px;">
+            <a href="#">CURRENT SALES</a>
+        </nav>
+        <div id="row"class="row">
             {%for guitar in sales%}
-            <div id="guitars"class="col-sm-3"style="width: 300px; height:300px;margin-top: 100px;text-align: center;">
+            <div id="guitars"class="col-sm-3"style=";width: 300px; height:300px;margin-top: 100px;text-align: center;">
                 <img src="{{guitar.image}}"alt="guitar pic" style="max-width: 100%; max-height: 100%;width: 255px;height: 170px;">
                 <strong>${{guitar.price}}({{guitar.sale}}% off)</strong>
                 <p>{{guitar.brand}} {{guitar.model}}</p>

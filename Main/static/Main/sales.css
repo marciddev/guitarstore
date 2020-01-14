@@ -36,3 +36,9 @@ img {
     border: 1px solid black;
     box-shadow: 1px 1px 1px;
 }
+#row {
+    margin-top: -70px;
+}
+#head {
+    margin-top: 75px;
+}

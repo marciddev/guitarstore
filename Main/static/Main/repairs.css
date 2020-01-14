@@ -12,15 +12,6 @@ a {
 html, body {
     background-color: #f6f1f4 !important;
 }
-#head {
-    margin-top: 75px;   
-}
-#head a:nth-of-type(2) {
-    margin-left: 630px;
-}
-#row {
-    margin-top: -70px;
-}
 #footer {
     background-color: #343A40;
     height: 60px;
@@ -30,4 +21,13 @@ html, body {
 }
 #footer *{
     margin-top: 10px;
+}
+#head {
+    margin-top: 75px;
+}
+ul li{
+    font-size: 13pt;
+    line-height: 45pt;
+    font-weight: bold;
+    font-style: italic;
 }

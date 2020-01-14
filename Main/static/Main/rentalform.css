@@ -12,22 +12,18 @@ a {
 html, body {
     background-color: #f6f1f4 !important;
 }
-#head {
-    margin-top: 75px;   
-}
-#head a:nth-of-type(2) {
-    margin-left: 630px;
-}
-#row {
-    margin-top: -70px;
-}
-#footer {
-    background-color: #343A40;
-    height: 60px;
-    margin-top: 50px;
+#form form *{
     text-align: center;
-    color: white;
 }
-#footer *{
-    margin-top: 10px;
+input[type=submit] {
+    margin-left: 215px;
+}
+#form {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 75px;
+}
+h1 {
+    text-align: center;
+    margin-top: 100px !important;
 }

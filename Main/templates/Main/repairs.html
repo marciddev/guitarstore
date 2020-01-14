@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Repairs</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         {%load static %}
-        <link rel="stylesheet" href="{% static 'Main/rentals.css' %}">
-    <title>Rentals</title>
+        <link rel="stylesheet" href="{% static 'Main/repairs.css' %}">
 </head>
 <body>
     <nav class="navbar navbar-dark bg-dark" style="height: 65px;">
@@ -20,20 +20,19 @@
     </nav>
     <div class="container">
         <nav id="head"class="Navbar navbar-dark bg-dark" style="height: 45px;">
-            <a href="#">CURRENT RENTALS AVAILABLE: </a>
-            <a href="/rental/create">ADD A RENTAL</a>
+            <a href="#">WHAT WE REPAIR </a>
         </nav>
-        <div id="row"class="row">
-            {%for rental in rentals%}
-            <div id="rentals"class="col-sm-3"style=";width: 300px; height:300px;margin-top: 100px;text-align: center;">
-                <img src="{{rental.image}}"alt="guitar pic" style="max-width: 100%; max-height: 100%;width: 255px;height: 170px;">
-                <strong>${{rental.price}}0</strong>
-                <p>{{rental.brand}} {{rental.model}}</p>
-                <small>Posted on {{rental.created_at}}</small>
-                <a href="/buynow/rental/{{rental.id}}"><button class="btn btn-primary"style="margin-top: 20px;">Buy Now</button></a>
-            </div>
-            {%endfor%}
-        </div>
+        <ul>
+            <li>Services for the electric and acoustic guitars</li>
+            <li>Setups and restrings</li>
+            <li>Hardware installation and replacement</li>
+            <li>Fretwork</li>
+            <li>Pickup installation and electronic repair/replacement</li>
+            <li>Acoustic bridge repair</li>
+            <li>Acoustic and electric neck resetting</li>
+            <li>Appraisals</li>
+            <li>Requests, just call (918) 111-1111</li>
+        </ul>
     </div>
     <footer id="footer">
         <small>Developer: Kevin Cox</small>

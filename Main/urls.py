@@ -11,5 +11,6 @@ urlpatterns = [
     url(r'^rental/create$', views.createrental),
     url(r'^rental/redirect$', views.postrental),
     url(r'^repairs$', views.repairs),
-    url(r'^lessons$', views.lessons)
+    url(r'^lessons$', views.lessons),
+    path('checkout/<int:id>', views.checkout)
 ]

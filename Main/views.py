@@ -39,3 +39,8 @@ def repairs(request):
     return render(request, "Main/repairs.html")
 def lessons(request):
     return render(request, "Main/lessons.html")
+def checkout(request, id):
+    context = {
+        "id" : id
+    }
+    return render(request, "Main/checkout.html", context)

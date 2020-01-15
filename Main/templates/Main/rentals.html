@@ -30,7 +30,7 @@
                 <strong>${{rental.price}}0</strong>
                 <p>{{rental.brand}} {{rental.model}}</p>
                 <small>Posted on {{rental.created_at}}</small>
-                <a href="/buynow/rental/{{rental.id}}"><button class="btn btn-primary"style="margin-top: 20px;">Buy Now</button></a>
+                <a href="/checkout/{{rental.id}}"><button class="btn btn-primary"style="margin-top: 20px;">Buy Now</button></a>
             </div>
             {%endfor%}
         </div>
